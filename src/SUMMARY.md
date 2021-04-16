@@ -1,5 +1,6 @@
 # Executive Summary
 
+- [Summary](./overview.md)
 - [Design Problem](./design_problem.md)
 - [Project Objectives](./objectives.md)
 - [PCB Design](./pcb/overview.md)
