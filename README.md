@@ -1,5 +1,5 @@
 # LED Based Solar Simulator
-> More efficient than a Xenon Arc Lamp™
+> More efficient than a Xenon Arc Lamp
 
 
 [![GitHub](https://img.shields.io/github/license/Cap1led/documentation)](https://github.com/Cap1LED/documentation/blob/main/LICENSE)
