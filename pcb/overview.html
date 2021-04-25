@@ -164,7 +164,65 @@
                 <div id="content" class="content">
                     <main>
                         <h1><a class="header" href="#pcb-design-overview" id="pcb-design-overview">PCB Design Overview</a></h1>
+<p>The PCB Design team consisted of Eli Kopendahka and Jack Hayes.</p>
 <h2><a class="header" href="#design-process" id="design-process">Design Process</a></h2>
+<p>We folowed a pretty simple design process</p>
+<pre><code class="language-bob">┌───────────────────────┐
+│                       │
+│    Research Problem   │
+│                       │
+└───────────┬───────────┘
+            │
+            ▼
+┌───────────────────────┐
+│                       │
+│  Define Requirements  │
+│                       │
+└───────────┬───────────┘
+            │
+            ▼
+┌───────────────────────┐
+│                       │
+│     Create Models     │
+│                       │
+└───────────┬───────────┘
+            │
+            ▼
+┌───────────────────────┐
+│                       │
+│     Select a model    │
+│                       │
+└───────────┬───────────┘
+            │
+            ▼
+┌───────────────────────┐
+│                       │
+│  Design and prototype │◄─────────────────────┐
+│                       │                      │
+└───────────┬───────────┘                      │
+            │                         ┌────────┴─────────┐
+            ▼                         │                  │
+┌───────────────────────┐             │                  │
+│                       │◄────────────┤                  │
+│          Test         │             │   Make changes   │
+│                       ├────────────►│                  │
+└───────────┬───────────┘             │                  │
+            │                         │                  │
+            ▼                         └──────────────────┘
+┌───────────────────────┐                      ▲
+│                       │                      │
+│    Evaluate Design    ├──────────────────────┘
+│                       │
+└───────────┬───────────┘
+            │
+            ▼
+┌───────────────────────┐
+│                       │
+│    Design complete    │
+│                       │
+└───────────────────────┘
+
+</code></pre>
 <h3><a class="header" href="#research" id="research">Research</a></h3>
 <h3><a class="header" href="#initial-schematic-creation" id="initial-schematic-creation">Initial Schematic Creation</a></h3>
 <h3><a class="header" href="#netlist-generation" id="netlist-generation">Netlist Generation</a></h3>
