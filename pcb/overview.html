@@ -223,8 +223,22 @@
 └───────────────────────┘
 
 </code></pre>
+<p>Tools we used in our design process:</p>
+<ul>
+<li><a href="https://kicad.org/">KiCad</a> : for schematic and PCB design</li>
+<li><a href="https://www.gnu.org/software/octave/index">GNU Octave</a> : for helping create the spectral model</li>
+<li><a href="https://markummitchell.github.io/engauge-digitizer/">Engauge Digitizer</a> : for digitizing the spectral graphs of each LED</li>
+<li>Microsoft Excel : for creating a pretty graph of the spectrum</li>
+</ul>
 <h3><a class="header" href="#research" id="research">Research</a></h3>
 <p>The research phase of this project took the largest chunk of our time, as we initially had trouble finding suitable LEDs for our project. This, coupled with the design complexity each different kind of LED would bring, made it very hard initially to get this off the ground. We decided to take the relative spectral power graphs from each LED we were interested in and digitize the data so we could model how different combinations of each LED would change the total output spectrum. Using this we were able to get a relatively close spectral match with just 5 different types of LEDs.</p>
+<table><thead><tr><th>LED Manufacturer</th><th>Model</th><th>LED Count</th></tr></thead><tbody>
+<tr><td>Cree</td><td>MHBBWT-0000-000C0BE240E</td><td>20</td></tr>
+<tr><td>Cree</td><td>MHBBWT-0000-000C0BD430E</td><td>20</td></tr>
+<tr><td>Lumileds</td><td>L1CU-CYN1000000000</td><td>60</td></tr>
+<tr><td>Lumileds</td><td>LXM3-PD01</td><td>40</td></tr>
+<tr><td>Lumileds</td><td>LXML-PF01</td><td>100</td></tr>
+</tbody></table>
 <h3><a class="header" href="#component-selection" id="component-selection">Component Selection</a></h3>
 <p>After deciding on how many different kinds of LEDs and how many of each kind we'd need, we decided to calculate voltage and current requirements for our board. Initially, given the variety of voltages that each kind of LED operated at, we had thought it a good idea to look into designing a custom DC-DC power supply to power our project. It quickly became obvious that the best solution in our case would be to buy an off-the-shelf DC power supply and use resistors to drop any extra voltage. When it came to selecting what kind of transistor we would use, we arrived at a cheap MOSFET that fit our voltage and current requirements. Finally, for resistors, we decided to run a lot of resistors in parallel such that the equivalent resistance matched our calculations, and that each resistor only had to be able to handle 0.25-0.5W.</p>
 <h3><a class="header" href="#initial-schematic-creation" id="initial-schematic-creation">Initial Schematic Creation</a></h3>
