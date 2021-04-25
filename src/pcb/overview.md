@@ -60,8 +60,23 @@ We folowed a pretty simple design process
 └───────────────────────┘
 
 ```
+Tools we used in our design process:
+- [KiCad](https://kicad.org/) : for schematic and PCB design
+- [GNU Octave](https://www.gnu.org/software/octave/index) : for helping create the spectral model
+- [Engauge Digitizer](https://markummitchell.github.io/engauge-digitizer/) : for digitizing the spectral graphs of each LED
+- Microsoft Excel : for creating a pretty graph of the spectrum
+
 ### Research
 The research phase of this project took the largest chunk of our time, as we initially had trouble finding suitable LEDs for our project. This, coupled with the design complexity each different kind of LED would bring, made it very hard initially to get this off the ground. We decided to take the relative spectral power graphs from each LED we were interested in and digitize the data so we could model how different combinations of each LED would change the total output spectrum. Using this we were able to get a relatively close spectral match with just 5 different types of LEDs.
+
+| LED Manufacturer | Model                   | LED Count |
+|------------------|-------------------------|-----------|
+| Cree             | MHBBWT-0000-000C0BE240E | 20        |
+| Cree             | MHBBWT-0000-000C0BD430E | 20        |
+| Lumileds         | L1CU-CYN1000000000      | 60        |
+| Lumileds         | LXM3-PD01               | 40        |
+| Lumileds         | LXML-PF01               | 100       |
+
 ### Component Selection
 After deciding on how many different kinds of LEDs and how many of each kind we'd need, we decided to calculate voltage and current requirements for our board. Initially, given the variety of voltages that each kind of LED operated at, we had thought it a good idea to look into designing a custom DC-DC power supply to power our project. It quickly became obvious that the best solution in our case would be to buy an off-the-shelf DC power supply and use resistors to drop any extra voltage. When it came to selecting what kind of transistor we would use, we arrived at a cheap MOSFET that fit our voltage and current requirements. Finally, for resistors, we decided to run a lot of resistors in parallel such that the equivalent resistance matched our calculations, and that each resistor only had to be able to handle 0.25-0.5W.
 ### Initial Schematic Creation
