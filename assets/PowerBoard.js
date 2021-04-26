@@ -114,13 +114,9 @@ function init() {
 
     // renderer
 
-    renderer = new THREE.WebGLRenderer();
-    renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(window.innerWidth, window.innerHeight);
-
-    container = document.createElement('div');
-    document.body.appendChild(container);
-    container.appendChild(renderer.domElement);
+    renderer = new THREE.WebGLRenderer( { antialias: true, canvas: drawingSurface } );
+    renderer.setPixelRatio( window.devicePixelRatio );
+    renderer.setSize( 400, 400 );
 
     window.addEventListener('resize', onWindowResize, false);
 
