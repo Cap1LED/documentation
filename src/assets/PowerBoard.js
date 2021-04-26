@@ -87,7 +87,7 @@ animate();
 
 function init() {
 
-    camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.01, 1e10);
+    camera = new THREE.PerspectiveCamera(60, window.innerWidth / (window.innerHeight - 200), 0.01, 1e10);
     camera.position.z = 6;
 
     controls = new THREE.OrbitControls(camera);
@@ -127,10 +127,10 @@ function init() {
 
 function onWindowResize() {
 
-    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.aspect = window.innerWidth / (window.innerHeight - 200);
     camera.updateProjectionMatrix();
 
-    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setSize(window.innerWidth, window.innerHeight - 200);
 
 }
 
