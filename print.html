@@ -269,16 +269,11 @@
 <p>The software we used offered netlist export, which generated a very useful ratsnest which draws lines between pads that need to be connected together. The netlist import within the PCB creation tool also automatically places the correct number of components, given that the component has a linked footprint in the schematic and that the netlist you exported is current with the schematic. We met with the team that would be working on focusing the light that comes out of the board, and they requested that we make the board reasonably small, and that each type of LED be evenly distributed around the board. Using those two bits of information as a starting point, we decided the board would be 5&quot;x5&quot;, and we would lay out the LEDs in a roughly circular pattern. Given those constraints, and the fact that we have a pretty high current requirement, we quickly learned that a two layer board was not an option. The manufacturer that we decided to go with, JLCPCB, offers boards with layers in multiples of two, with inside layers having half as much copper as outside layers. With this in mind, we calculated the minimum trace widths we'd need for each trace to carry the amount of current we needed, and proceeded with routing.</p>
 <h1><a class="header" href="#complete-schematic" id="complete-schematic">Complete Schematic</a></h1>
 <h1><a class="header" href="#led-board-design" id="led-board-design">LED Board Design</a></h1>
-<div id="container">
-</div>
 <script src="../assets/three.js"></script>
 <script src="../assets/OrbitControls.js"></script>
 <script src="../assets/VRMLLoader.js"></script>
 <script src="../assets/WebGL.js"></script>
 <script src="../assets/LEDBoard.js"></script><h1><a class="header" href="#power-board-design" id="power-board-design">Power Board Design</a></h1>
-<div id="container">
-    <div id="canvas"></div>
-</div>
 <script src="../assets/three.js"></script>
 <script src="../assets/OrbitControls.js"></script>
 <script src="../assets/VRMLLoader.js"></script>
