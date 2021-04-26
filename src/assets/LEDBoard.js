@@ -114,10 +114,9 @@ function init() {
 
     // renderer
     container = document.getElementById('container');
-    positionInfo = container.getBoundingClientRect();
     renderer = new THREE.WebGLRenderer();
     renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(positionInfo.width, positionInfo.height);
+    renderer.setSize(window.innerWidth, window.innerHeight - 200);
 
     
     document.body.appendChild(container);
