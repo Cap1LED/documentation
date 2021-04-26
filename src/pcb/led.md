@@ -1,6 +1,5 @@
 # LED Board Design
 <div id="container">
-    <div id="canvas"></div>
 </div>
 
 <script src="../assets/three.js"></script>
