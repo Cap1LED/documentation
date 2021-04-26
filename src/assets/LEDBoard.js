@@ -113,13 +113,11 @@ function init() {
     });
 
     // renderer
-    container = document.getElementById('container');
     renderer = new THREE.WebGLRenderer();
     renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(window.innerWidth, window.innerHeight - 200);
+    renderer.setSize(window.innerWidth, window.innerHeight);
 
-    
-    document.body.appendChild(container);
+    container = document.getElementById('content');
     container.appendChild(renderer.domElement);
 
     window.addEventListener('resize', onWindowResize, false);

@@ -1,6 +1,4 @@
 # LED Board Design
-<div id="container">
-</div>
 
 <script src="../assets/three.js"></script>
 <script src="../assets/OrbitControls.js"></script>
